@@ -32,6 +32,7 @@ try:
             sensor_read = GPIO.input(12)
             if sensor_read == 1 and sensor_prev == 0:
                 cnt = cnt + 1
+            sensor_prev = sensor_read
             time.sleep(0.001)
         
         rps = cnt/time_delay
