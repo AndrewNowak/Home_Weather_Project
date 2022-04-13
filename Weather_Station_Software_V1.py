@@ -5,7 +5,7 @@ import time
 
 #Set up GPIO pins for anemometer sensor
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup(12.GPIO.IN)
+GPIO.setup(12,GPIO.IN)
 
 #Set up so the sensor can read tp Pi
 i2c = board.I2C()
