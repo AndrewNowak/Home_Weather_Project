@@ -21,7 +21,7 @@ try:
         fahr = sensor.temperature*1.8 + 32 #sensor reads in Celsius, convert to Fahrenheit
         temp = fahr
         voc = sensor.gas
-        humid = sensor.humid
+        humid = sensor.humidity
         pres = sensor.pressure
 
         sensor_prev = GPIO.input(12)
