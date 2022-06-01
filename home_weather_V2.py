@@ -46,8 +46,8 @@ try:
         #print('Wind Speed: {} mph'.format(wind_speed))
         
         WUurl = "https://weatherstation.wunderground.com/weatherstation/updateweatherstation.php?"
-        WU_station_id = "KININDIA697"
-        WU_station_pwd = "WdBncmCB"
+        WU_station_id = "" #insert station ID
+        WU_station_pwd = "" #insert station password
         WU_creds = "ID=" + WU_station_id + "&PASSWORD"+ WU_station_pwd
         date_str = "&dateutc=now"
         action_str = "&action=updateraw"
