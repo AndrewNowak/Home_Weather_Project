@@ -48,7 +48,7 @@ try:
         WUurl = "https://weatherstation.wunderground.com/weatherstation/updateweatherstation.php?"
         WU_station_id = "" #insert station ID
         WU_station_pwd = "" #insert station password
-        WU_creds = "ID=" + WU_station_id + "&PASSWORD"+ WU_station_pwd
+        WU_creds = "ID=" + WU_station_id + "&PASSWORD="+ WU_station_pwd
         date_str = "&dateutc=now"
         action_str = "&action=updateraw"
         
@@ -56,10 +56,10 @@ try:
             WUurl +
             WUcreds +
             date_str +
-            "&humidity=" + humid +
-            "&baromin=" + pres +
-            "&windspeedmph=" + wind_speed +
-            "&tempf=" + fahr +
+            "&humidity=" + str(humid) +
+            "&baromin=" + str(pres) +
+            "&windspeedmph=" + str(wind_speed) +
+            "&tempf=" + str(fahr) +
             action_str)
         
         time.sleep(580)
